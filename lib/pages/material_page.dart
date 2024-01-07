@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:dashboard_reborn/pages/liquid_page.dart';
 import 'package:dashboard_reborn/utils/colors.dart';
@@ -9,7 +8,6 @@ import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 class MyMaterialPage extends StatefulWidget {
   @override

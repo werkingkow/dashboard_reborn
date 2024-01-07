@@ -1,14 +1,12 @@
 import 'package:dashboard_reborn/utils/ui_helpers.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SexyTile extends StatelessWidget {
-  const SexyTile({
-    this.child,
-    this.color,
-    this.splashColor,
-    this.onTap,
-  });
+  SexyTile(
+      {required this.child,
+      required this.color,
+      required this.splashColor,
+      required this.onTap});
   final Widget child;
   final Color color;
   final Color splashColor;
@@ -26,6 +24,7 @@ class SexyTile extends StatelessWidget {
           child: child,
           splashColor: splashColor,
           borderRadius: BorderRadius.circular(15.0),
+          // ignore: unnecessary_null_comparison
           onTap: onTap == null ? doNothing : () => onTap(),
         ),
       ),

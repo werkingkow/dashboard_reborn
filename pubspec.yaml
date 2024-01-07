@@ -3,7 +3,7 @@ description: A very sexy Flutter template!
 version: 1.1.1+5
 
 environment:
-  sdk: ">=2.2.2 <3.0.0"
+  sdk: ">=2.12.2 <3.0.0"
 
 dependencies:
   flutter:
@@ -14,11 +14,11 @@ dependencies:
   eva_icons_flutter: ^3.0.0
   flare_flutter: ^3.0.0
   gradient_widgets: ^0.6.0
-  liquid_swipe: ^2.1.0
-  url_launcher: ^5.5.0
+  liquid_swipe: ^3.1.0
+  url_launcher: ^6.2.2
 
 dev_dependencies:
-  flutter_launcher_icons: ^0.9.0
+  flutter_launcher_icons: ^0.13.1
 
 flutter_icons:
   android: 'launcher_icon'

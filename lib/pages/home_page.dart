@@ -64,7 +64,11 @@ class _MyHomePageState extends State<MyHomePage> {
                           tag:
                               'tile$index', //using a different hero widget tag for
                           // each page mapped to the page's index value
-                          child: SexyTile(),
+                          child: SexyTile(
+                              color: Colors.transparent,
+                              onTap: () {},
+                              splashColor: Colors.transparent,
+                              child: Container()),
                         ),
                         Container(
                           margin: EdgeInsets.all(15.0),
@@ -106,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       } else if (index == 2) {
                                         return MyAboutPage();
                                       } else {
-                                        return null;
+                                        return SizedBox();
                                       }
                                     },
                                   ),

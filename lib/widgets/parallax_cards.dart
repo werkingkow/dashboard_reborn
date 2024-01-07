@@ -3,25 +3,23 @@ import 'package:dashboard_reborn/utils/colors.dart';
 import 'package:dashboard_reborn/utils/page_transformer.dart';
 import 'package:dashboard_reborn/utils/text_styles.dart';
 import 'package:dashboard_reborn/utils/ui_helpers.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gradient_widgets/gradient_widgets.dart';
-import 'package:meta/meta.dart';
 
 //these cards are modified from https://github.com/roughike/page-transformer
 
 class ParallaxCards extends StatelessWidget {
   ParallaxCards({
-    @required this.item,
-    @required this.pageVisibility,
+    required this.item,
+    required this.pageVisibility,
   });
 
   final ParallaxCardItem item;
   final PageVisibility pageVisibility;
 
   Widget _applyTextEffects({
-    @required double translationFactor,
-    @required Widget child,
+    required double translationFactor,
+    required Widget child,
   }) {
     final double xTranslation = pageVisibility.pagePosition * translationFactor;
 

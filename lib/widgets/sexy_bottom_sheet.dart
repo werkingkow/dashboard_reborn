@@ -4,7 +4,6 @@ import 'dart:ui';
 import 'package:dashboard_reborn/utils/text_styles.dart';
 import 'package:dashboard_reborn/utils/ui_helpers.dart';
 import 'package:dashboard_reborn/widgets/sexy_tile.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 //this code is borrowed and then modified from https://github.com/MarcinusX/buy_ticket_design
@@ -16,7 +15,7 @@ const double iconStartMarginTop = -15;
 const double iconEndMarginTop = 50;
 const double iconsVerticalSpacing = 0;
 const double iconsHorizontalSpacing = 0;
-AnimationController controller;
+late AnimationController controller;
 
 void toggleBottomSheet() =>
     controller.fling(velocity: isBottomSheetOpen ? -2 : 2);
@@ -189,13 +188,13 @@ class ExpandedSheetItem extends StatelessWidget {
   final String title;
 
   const ExpandedSheetItem(
-      {Key key,
-      this.topMargin,
-      this.height,
-      this.isVisible,
-      this.borderRadius,
-      this.title,
-      this.leftMargin})
+      {Key? key,
+      required this.topMargin,
+      required this.height,
+      required this.isVisible,
+      required this.borderRadius,
+      required this.title,
+      required this.leftMargin})
       : super(key: key);
 
   @override
@@ -264,7 +263,7 @@ class SheetHeader extends StatelessWidget {
   final double topMargin;
 
   const SheetHeader(
-      {Key key, @required this.fontSize, @required this.topMargin})
+      {Key? key, required this.fontSize, required this.topMargin})
       : super(key: key);
 
   @override

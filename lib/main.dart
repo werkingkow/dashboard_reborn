@@ -13,13 +13,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Quicksand',
         primaryColor: MyColors.primary,
-        accentColor: MyColors.accent,
+        hintColor: MyColors.accent,
         brightness: Brightness.light,
       ),
       darkTheme: ThemeData(
         fontFamily: 'Quicksand',
         primaryColor: MyColors.primary,
-        accentColor: MyColors.accent,
+        hintColor: MyColors.accent,
         brightness: Brightness.dark,
       ),
       themeMode: EasyDynamicTheme.of(context).themeMode,

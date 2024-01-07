@@ -3,7 +3,6 @@ import 'package:dashboard_reborn/utils/text_styles.dart';
 import 'package:dashboard_reborn/utils/ui_helpers.dart';
 import 'package:dashboard_reborn/widgets/sexy_tile.dart';
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MyAboutPage extends StatefulWidget {
@@ -157,7 +156,7 @@ class _MyAboutPageState extends State<MyAboutPage> {
                           ],
                         ),
                       ),
-                      splashColor: MyColors.accent,
+                      splashColor: MyColors.accent, color: MyColors.accent, onTap: () {  },
                     ),
                   ),
                   SexyTile(
@@ -189,7 +188,7 @@ class _MyAboutPageState extends State<MyAboutPage> {
                         ],
                       ),
                     ),
-                    splashColor: MyColors.accent,
+                    splashColor: MyColors.accent, color: MyColors.accent, onTap: () {  },
                   ),
                   SexyTile(
                     child: Padding(
@@ -220,7 +219,7 @@ class _MyAboutPageState extends State<MyAboutPage> {
                         ],
                       ),
                     ),
-                    splashColor: MyColors.accent,
+                    splashColor: MyColors.accent, color: MyColors.accent, onTap: () {  },
                   ),
                   SizedBox(
                     height: 36.0,

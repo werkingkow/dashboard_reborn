@@ -5,7 +5,6 @@ import 'package:dashboard_reborn/utils/ui_helpers.dart';
 import 'package:dashboard_reborn/widgets/parallax_cards.dart';
 import 'package:dashboard_reborn/widgets/swiping_cards.dart';
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gradient_widgets/gradient_widgets.dart';
 
@@ -29,9 +28,9 @@ List<String> swipingCardTitles = [
 
 class ParallaxCardItem {
   ParallaxCardItem({
-    this.title,
-    this.body,
-    this.imagePath,
+    required this.title,
+    required this.body,
+    required this.imagePath,
   });
 
   final String title;
@@ -81,7 +80,7 @@ class _MyGradientsPageState extends State<MyGradientsPage> {
       () {
         setState(
           () {
-            currentPage = controller.page;
+            currentPage = controller.page!;
           },
         );
       },
